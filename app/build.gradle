@@ -19,8 +19,12 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    // lottie动画库
-    implementation 'com.airbnb.android:lottie:3.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    // lottie动画库
+    implementation 'com.airbnb.android:lottie:3.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    // AndPermission权限库
+    implementation 'com.yanzhenjie.permission:x:2.0.1'
 }

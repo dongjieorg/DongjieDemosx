@@ -24,6 +24,13 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.List;
 
+/**
+ * GitHub地址：https://github.com/airbnb/lottie-android
+ * 主要是加载json动画
+ * 依赖implementation 'com.airbnb.android:lottie:3.0.0'之后会报错， 在Application标签下加下面两句即可：
+ *   tools:replace="android:appComponentFactory"
+ *   android:appComponentFactory=""
+ */
 public class LottieActivity extends BaseActivity {
     LottieAnimationView lottieAnimationView2 = null;
     LottieAnimationView lottieAnimationView3 = null;

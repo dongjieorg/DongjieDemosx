@@ -30,6 +30,7 @@ import java.util.List;
  * 依赖implementation 'com.airbnb.android:lottie:3.0.0'之后会报错， 在Application标签下加下面两句即可：
  *   tools:replace="android:appComponentFactory"
  *   android:appComponentFactory=""
+ *   2.8（包括2.8）以上版本只支持androidx
  */
 public class LottieActivity extends BaseActivity {
     LottieAnimationView lottieAnimationView2 = null;

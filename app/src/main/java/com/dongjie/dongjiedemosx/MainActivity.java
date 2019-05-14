@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.dongjie.dongjiedemosx.base.BaseActivity;
 import com.dongjie.dongjiedemosx.lottie.LottieActivity;
+import com.dongjie.dongjiedemosx.rxbinding.RxBindingActivity;
 
 import java.util.LinkedList;
 
@@ -33,6 +34,11 @@ public class MainActivity extends BaseActivity {
         classBean = new ClassBean();
         classBean.setTitle("lottie动画");
         classBean.setClassName(LottieActivity.class);
+        list.add(classBean);
+
+        classBean = new ClassBean();
+        classBean.setTitle("RxBinding");
+        classBean.setClassName(RxBindingActivity.class);
         list.add(classBean);
 
         MyAdapter myAdapter = new MyAdapter(this, list);

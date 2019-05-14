@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.dongjie.dongjiedemosx">
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 检测联网方式，区分用户设备使用的是2G、3G或是WiFi -->
@@ -77,6 +78,7 @@
     <uses-permission android:name="MediaStore.Images.Media.INTERNAL_CONTENT_URI" />
     <uses-permission android:name="MediaStore.Images.Media.EXTERNAL_CONTENT_URI" />
     <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory=""
@@ -93,7 +95,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lottie.LottieActivity"></activity>
+        <activity android:name=".lottie.LottieActivity" />
+        <activity android:name=".rxbinding.RxBindingActivity"></activity>
     </application>
 
 </manifest>
